@@ -30,7 +30,7 @@ Start-Process -FilePath D:\New_Project\Apps\FortiClientVPN.exe  -Wait -ArgumentL
 Start-Sleep -s 60
 Start-Process -FilePath "D:\New_Project\Apps\184-005968-00_Rev_A_GVCSetup64.exe"  -Wait -ArgumentList '/Q'
 Start-Sleep -s 40
-Start-Process -FilePath "D:\New_Project\Apps\Spiceworks Agent.msi"  -Wait -ArgumentList '/q /l*v c:\spiceworksinstall.log SPICEWORKS_SERVER="172.16.0.46" SPICEWORKS_AUTH_KEY="Base64 passsword after login" SPICEWORKS_PORT="444" ADDLOCAL=FeatureService,FeatureTray /norestart'
+Start-Process -FilePath "D:\New_Project\Apps\Spiceworks Agent.msi"  -Wait -ArgumentList '/q /l*v c:\spiceworksinstall.log SPICEWORKS_SERVER="IP to Server" SPICEWORKS_AUTH_KEY="Base64 passsword after login" SPICEWORKS_PORT="444" ADDLOCAL=FeatureService,FeatureTray /norestart'
 start-sleep -s 20 
 Start-Process -FilePath "D:\New_Project\Apps\Apex1_Agent_Installer_Modifiedv2.msi"  -Wait -ArgumentList '/quiet'
 start-sleep -s 20 
